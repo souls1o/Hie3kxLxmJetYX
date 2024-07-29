@@ -16,11 +16,11 @@ def serve_styles(filename):
     return send_from_directory(os.path.join(app.root_path, 'styles'), filename)
 
 @app.route('/scripts/<path:filename>')
-def serve_styles(filename):
+def serve_scripts(filename):
     return send_from_directory(os.path.join(app.root_path, 'scripts'), filename)
 
 @app.route('/images/<path:filename>')
-def serve_styles(filename):
+def serve_images(filename):
     return send_from_directory(os.path.join(app.root_path, 'images'), filename)
 
 if __name__ == '__main__':
